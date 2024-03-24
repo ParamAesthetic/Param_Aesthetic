@@ -233,7 +233,8 @@ a.theme-btn.btn-reverse:after {
     z-index: 9999999;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../images/preloader.gif);
+    background-image: url(../images/logo.png);
+    background-size: contain;
 }
 
 /*** Scroll Top style ** */
@@ -552,6 +553,9 @@ a.theme-btn.style-three:before,
     align-items: center;
     justify-content: center;
     background-position: center;
+}
+.sec-hero{
+    margin-top: 120px;
 }
 
 .hero-content {
