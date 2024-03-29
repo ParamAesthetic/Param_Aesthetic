@@ -123,7 +123,7 @@ footer:after {
 
 /** Section Title style One **/
 .section-title h2 {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 /** Button style One **/
@@ -665,6 +665,12 @@ a.theme-btn.style-three:before,
     font-weight: 500;
     margin-bottom: 25px;
 }
+.about-content p {
+    line-height: 1.5;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
 
 .vision-mision {
     display: flex;
@@ -677,15 +683,10 @@ a.theme-btn.style-three:before,
 }
 
 .about-images {
-    max-width: 570px;
-    padding-left: 25%;
-    padding-top: 30px;
-    padding-bottom: 21.5%;
-    position: relative;
     /* animation: bounce3 2s infinite; */
 }  
 .img2{
-    animation: bounce3 2s infinite;
+    /* animation: bounce3 2s infinite; */
 }
 @keyframes bounce1 {
 
@@ -723,21 +724,21 @@ a.theme-btn.style-three:before,
         transform: translate(15%, 0);
     }
 }
-.about-images img:first-child {
+/* .about-images img:first-child {
     position: absolute;
     top: 0;
     right: 75%;
     width: 68%;
     animation: bounce1 2s infinite;
-}
+} */
 
-.about-images img:last-child {
+/* .about-images img:last-child {
     position: absolute;
     bottom: 0;
     right: 40%;
     width: 90%;
     animation: bounce2 2s infinite;
-}
+} */
 
 /****************************************************** */
 /**************** 07. Services Section  *************** */
@@ -762,7 +763,69 @@ a.theme-btn.style-three:before,
     position: relative;
     z-index: 2;
 }
+       
+.bookmarkBtn {
+        width: 30%;
+            height: 35px;
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.349);
+            background-color: rgb(94 38 106 / 73%);
+            display: flex;
+            align-items: center;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+            justify-content: center;
+            cursor: pointer;
+            transition-duration: 0.3s;
+            overflow: hidden;
+}
 
+.IconContainer {
+width: 98%;
+    height: 30px;
+    background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: 0.3s;
+}
+
+.icon {
+    border-radius: 1px;
+}
+
+.text {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3s;
+    font-size: 1.04em;
+}
+.simplybook-widget-button{
+    padding: 5px !important;
+}
+/* .bookmarkBtn:hover .IconContainer {
+    width: 28%;
+    transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+    transform: translate(10px);
+    width: 0;
+    font-size: 0;
+    transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+} */
 .services-section:after {
     position: absolute;
     content: '';
